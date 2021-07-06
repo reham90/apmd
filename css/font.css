@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: 'FrutigerLTArabic';
+    src: 
+        url('../font/FrutigerLTArabic-45Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FrutigerLTArabic';
+    src:
+        url('../font/FrutigerLTArabic-55Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'FrutigerLTArabic';
+    src:
+        url('../font/FrutigerLTArabic-65Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'FrutigerLTArabic';
+    src: 
+        url('../font/FrutigerLTArabic-75Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
