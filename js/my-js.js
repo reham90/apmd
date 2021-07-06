@@ -147,9 +147,10 @@ $(document).ready(function() {
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-const mediaQuery = window.matchMedia('(max-width: 768px)')
+$(document).ready(function() {
+if($(window).width()<991){
    var acc = document.getElementsByClassName("accordion");
+
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -161,7 +162,8 @@ for (i = 0; i < acc.length; i++) {
     } else {
       panel.style.display = "block";
     }
-  });
+});
 }
-mediaQuery.addListener(myFunction)
-myFunction(mediaQuery)
+}
+
+  });
