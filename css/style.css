@@ -310,7 +310,7 @@ nav ul li a:visited:hover {
     line-height: 20px;
   }
    nav ul li ul li a {
-    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .nav-dropdown {

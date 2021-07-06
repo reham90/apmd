@@ -282,8 +282,7 @@ nav ul li a:visited:hover {
   .nav-mobile {
     display: block;
     position: absolute;
-    
-    right: 334px;
+    right: 315px;
   }
 
   nav {
@@ -343,11 +342,12 @@ nav ul li a:visited:hover {
 }
 #re-show{
   display: block;
+  left: -13px;
 }
 #re-hide{
   display: none;
   position: absolute;
-  left: 200px;
+  left: 180px;
   z-index: 999;
 }
 .nav-dropdown {
