@@ -231,6 +231,15 @@ transition: 0.5s;
   top:0;
   right: 0;
 }
+@media only screen and (max-width: 798px){
+nav ul li a {
+    padding: 0;
+    margin-bottom: 20px;
+    }
+nav ul{
+  padding: 30px;
+  }
+}
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
