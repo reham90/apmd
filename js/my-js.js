@@ -37,7 +37,7 @@ $("#cover").toggle();
   $('#re-show').click(function(event) {
      $('nav ').css("right" , "0");
 
-    
+    $("body").css("overflow" , "hidden");
 
 $("#nav").toggle();
   
@@ -53,7 +53,7 @@ $('#re-hide').click(function(event) {
     $('.nav-list').removeClass('selected').addClass('dismiss');
   }
   event.preventDefault();
-
+ $("body").css("overflow" , "auto");
 });
 
  $('#cover').on('click', function() {
