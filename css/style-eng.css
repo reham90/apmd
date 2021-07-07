@@ -234,7 +234,7 @@ transition: 0.5s;
 @media only screen and (max-width: 798px){
 nav ul li a {
     padding: 0;
-    margin-bottom: 20px;
+   
     }
 nav ul{
   padding: 30px;
@@ -286,7 +286,7 @@ nav ul li a:visited:hover {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 0;
+  top: 15px;
   right: 10px;
   background: transparent;
   height: 45px;
@@ -392,8 +392,8 @@ nav ul li a:visited:hover {
 }
 #nav-toggle i{
   cursor: pointer;
-  font-size: 22px;
-  color: #000;
+  font-size: 16px;
+    color: #b7b7b7;
   position: absolute;
   content: "";
 }
@@ -410,6 +410,7 @@ nav ul li a:visited:hover {
   position: absolute;
   left: 90px;
   z-index: 999;
+  top:-13px;
 }
 .nav-dropdown {
   position: absolute;
