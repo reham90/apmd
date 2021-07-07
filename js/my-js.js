@@ -18,7 +18,7 @@
     // Toggle open and close nav styles on click
     $('#nav-toggle').click(function() {
     
-      $('nav ').css("right" , "0");
+     
 
 var y = document.getElementById("re-show");
   if (y.style.display === "none") {
@@ -42,17 +42,36 @@ var y = document.getElementById("re-show");
     zz.style.display = "block";
   }
 
-  var zzz = document.getElementById("nav");
+  
+
+
+    });
+
+  $('#re-show').click(function(event) {
+     $('nav ').css("right" , "0");
+
+
+     var zzz = document.getElementById("nav");
   if (zzz.style.display === "block") {
     zzz.style.display = "none";
   } else {
     zzz.style.display = "block";
   }
-
-
-    });
-
   
+
+  if ($('nav ul').hasClass('dismiss')) {
+    $('nav ul').removeClass('dismiss').addClass('selected').show();
+  }
+  event.preventDefault();
+});
+
+$('#re-hide').click(function(event) {
+  if ($('nav ul').hasClass('selected')) {
+    $('nav ul').removeClass('selected').addClass('dismiss');
+  }
+  event.preventDefault();
+});
+
     // Hamburger to X toggle
     $('#nav-toggle').on('click', function() {
       this.slideToggle('300');
@@ -103,7 +122,7 @@ $(document).ready(function() {
     owl.owlCarousel({
         margin: 10,
         nav: true,
-        rtl: true,
+        rtl: document.dir == 'rtl' ? true : false,
         loop: true,
         autoplay: true,
         autoplayTimeout: 3000,
@@ -135,7 +154,7 @@ $(document).ready(function() {
     owl.owlCarousel({
         margin: 10,
         nav: true,
-        rtl: true,
+       rtl: document.dir == 'rtl' ? true : false,
         loop: true,
         autoplay: true,
         autoplayTimeout: 3000,
