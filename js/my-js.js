@@ -53,6 +53,7 @@ $('#re-hide').click(function(event) {
     $('.nav-list').removeClass('selected').addClass('dismiss');
   }
   event.preventDefault();
+  $("body").css("overflow" , "auto");
 });
 
  $('#cover').on('click', function() {
