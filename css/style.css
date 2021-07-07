@@ -127,8 +127,7 @@ color: #000;
 padding-right: 29px;
 padding-left: 29px;
  z-index: 9;
- padding-top: 8px;
- padding-bottom: 5px;
+
  left: 50%;
  transform: translateX(-50%);
 }
