@@ -276,7 +276,7 @@ nav ul li a:visited:hover {
   top: 0;
   right: 10px;
   background: transparent;
-  height: 45px;
+  /* height: 45px; */
   width: 45px;
 }
 
@@ -284,7 +284,7 @@ nav ul li a:visited:hover {
   .nav-mobile {
     display: block;
     position: absolute;
-     top: 10px; 
+    top: 8px;
   }
 
   nav {
@@ -353,6 +353,7 @@ nav ul li a:visited:hover {
 }
   nav ul li {
     float: none;
+    width: 87%;
   }
   nav ul li a {
     padding: 15px;
@@ -374,7 +375,7 @@ nav ul li a:visited:hover {
 }
 #nav-toggle {
  position: absolute;
- top: 15px;
+ top: 5px;
  left: 35px;
  cursor: pointer;
 }
@@ -395,9 +396,9 @@ nav ul li a:visited:hover {
 #re-hide{
   display: none;
   position: absolute;
-    right: 196px;
-    z-index: 999;
-    top: -13px;
+  right: 196px;
+  z-index: 999;
+  top: 0px;
 }
 .nav-dropdown {
   position: absolute;
