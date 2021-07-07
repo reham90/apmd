@@ -123,9 +123,10 @@ color: #000;
  position: absolute;
  background-color: #fff;
  min-width: 140px;
-
-padding-right: 29px;
-padding-left: 29px;
+ padding-top: 8px;
+ padding-bottom: 5px;
+padding-right: 15px;
+padding-left: 15px;
  z-index: 9;
 
  left: 50%;
@@ -177,6 +178,9 @@ transition: 0.5s;
   padding: 0;
   margin: 0;
   margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cart-bar li{
   float: right;
@@ -283,7 +287,7 @@ nav ul li a:visited:hover {
   .nav-mobile {
     display: block;
     position: absolute;
-    top: 8px;
+    top: 15px;
   }
 
   nav {
@@ -374,14 +378,14 @@ nav ul li a:visited:hover {
 }
 #nav-toggle {
  position: absolute;
- top: 5px;
+ top: 17px;
  left: 35px;
  cursor: pointer;
 }
 #nav-toggle i{
   cursor: pointer;
-  font-size: 22px;
-  color: #000;
+  font-size: 16px;
+    color: #b7b7b7;
   position: absolute;
   content: "";
 }
@@ -397,15 +401,16 @@ nav ul li a:visited:hover {
   position: absolute;
   right: 196px;
   z-index: 999;
-  top: 0px;
+  top: -13px;
 }
 .nav-dropdown {
   position: absolute;
   display: none;
-  z-index: 1;
-  background: #fff;
-  top: 45px;
-  box-shadow: none;
+      background: transparent;
+    top: 35px;
+    box-shadow: none;
+    padding: 0;
+    z-index: 1;
 }
 .center{
   margin-left: auto;
@@ -414,6 +419,15 @@ nav ul li a:visited:hover {
 }
 .flag{
   padding-left: 7px;
+}
+@media only screen and (max-width: 798px){
+nav ul li a {
+    padding: 0;
+    margin-bottom: 20px;
+    }
+nav ul{
+  padding: 30px;
+  }
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -892,6 +906,9 @@ footer{
       position: absolute;
     top: 15px;
     left: 15px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navigation{
   border-top: 0;

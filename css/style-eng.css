@@ -123,9 +123,10 @@ color: #000;
  position: absolute;
  background-color: #fff;
  min-width: 140px;
-
-padding-right: 29px;
-padding-left: 29px;
+ padding-top: 8px;
+ padding-bottom: 5px;
+padding-right: 15px;
+padding-left: 15px;
  z-index: 9;
  
  left: 50%;
@@ -176,6 +177,9 @@ transition: 0.5s;
   list-style: none;
   padding: 0;
   margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   margin-left: 20px;
 }
 .cart-bar li{
@@ -901,6 +905,7 @@ footer{
   position: absolute;
   top: 15px;
   right: 15px;
+    
 }
 .navigation{
   border-top: 0;

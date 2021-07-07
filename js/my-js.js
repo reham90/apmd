@@ -72,6 +72,11 @@ $('#re-hide').click(function(event) {
   event.preventDefault();
 });
 
+ $('#cover').on('click', function() {
+$("#re-hide").click();
+ });
+
+
     // Hamburger to X toggle
     $('#nav-toggle').on('click', function() {
       this.slideToggle('300');
