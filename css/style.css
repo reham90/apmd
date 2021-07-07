@@ -291,7 +291,7 @@ nav ul li a:visited:hover {
     z-index: 9;
     padding: 0 0 15px;
     position: fixed;
-    right: 0;
+    right: -250px;
     height: 100%;
     background: #262626;
   }
@@ -349,8 +349,9 @@ nav ul li a:visited:hover {
 #re-hide{
   display: none;
   position: absolute;
-  right: 200px;
-  z-index: 999;
+    right: 196px;
+    z-index: 999;
+    top: -13px;
 }
 .nav-dropdown {
   position: absolute;
@@ -477,6 +478,8 @@ padding-top: 15px;
 .name{
   color: #231f20;
   font-size: 15px;
+      padding: 0 10px;
+      text-align: center;
  margin-left: auto;
  margin-right: auto;
  display: table;
@@ -491,12 +494,16 @@ padding-top: 15px;
 .sel-block:hover .name{
   color:#ec2028;
 }
+.price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .old{
   font-size: 15px;
   color: #737373;
   text-decoration:line-through;
-  float: right;
-  margin-left: 7px;
+ 
   direction: ltr;
 }
 .new{
@@ -974,12 +981,13 @@ padding-bottom: 16px;
 .copy p:first-child{
       padding-top: 15px;
 }
-.name{
-  margin-right: 20px;
-}
+
 .old{
   margin-right: 20px;
 }
+
+/*** menu style **/
+
 }
 
 

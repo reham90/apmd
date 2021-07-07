@@ -483,6 +483,8 @@ padding-top: 15px;
   margin-left: auto;
   margin-right: auto;
   display: table;
+   padding: 0 10px;
+      text-align: center;
   transition: 0.5s;
   text-transform: capitalize;
   margin-top: 19px;
@@ -495,19 +497,23 @@ padding-top: 15px;
 .sel-block:hover .name{
   color:#ec2028;
 }
+.price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .old{
   font-size: 15px;
   color: #737373;
   text-decoration:line-through;
-  float: right;
-  margin-left: 7px;
+  
   direction: ltr;
 }
 .new{
   font-size: 15px;
   color: #ec2028;
   direction: ltr;
-  float: right;
+  
 }
 .best-sell .owl-dots{
   display: none;

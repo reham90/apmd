@@ -12,9 +12,13 @@
     $('html').click(function() {
       $('.nav-dropdown').hide();
     });
+
+   
+
     // Toggle open and close nav styles on click
     $('#nav-toggle').click(function() {
-      $('nav ul').toggle("slide");
+    
+      $('nav ').css("right" , "0");
 
 var y = document.getElementById("re-show");
   if (y.style.display === "none") {
@@ -38,8 +42,17 @@ var y = document.getElementById("re-show");
     zz.style.display = "block";
   }
 
+  var zzz = document.getElementById("nav");
+  if (zzz.style.display === "block") {
+    zzz.style.display = "none";
+  } else {
+    zzz.style.display = "block";
+  }
+
 
     });
+
+  
     // Hamburger to X toggle
     $('#nav-toggle').on('click', function() {
       this.slideToggle('300');
