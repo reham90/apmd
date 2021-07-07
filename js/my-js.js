@@ -20,27 +20,14 @@
     
      
 
-var y = document.getElementById("re-show");
-  if (y.style.display === "none") {
-    y.style.display = "block";
-  } else {
-    y.style.display = "none";
-  }
+$("#re-show").toggle();
+
+$("#re-hide").toggle();
+
+$("#cover").toggle();
 
 
-   var z = document.getElementById("re-hide");
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "block";
-  }
 
-  var zz = document.getElementById("cover");
-  if (zz.style.display === "block") {
-    zz.style.display = "none";
-  } else {
-    zz.style.display = "block";
-  }
 
   
 
@@ -50,24 +37,20 @@ var y = document.getElementById("re-show");
   $('#re-show').click(function(event) {
      $('nav ').css("right" , "0");
 
+     $("body").css("overflow" , "hidden");
 
-     var zzz = document.getElementById("nav");
-  if (zzz.style.display === "block") {
-    zzz.style.display = "none";
-  } else {
-    zzz.style.display = "block";
-  }
+$("#nav").toggle();
   
 
-  if ($('nav ul').hasClass('dismiss')) {
-    $('nav ul').removeClass('dismiss').addClass('selected').show();
+  if ($('.nav-list').hasClass('dismiss')) {
+    $('.nav-list').removeClass('dismiss').addClass('selected').show();
   }
   event.preventDefault();
 });
 
 $('#re-hide').click(function(event) {
-  if ($('nav ul').hasClass('selected')) {
-    $('nav ul').removeClass('selected').addClass('dismiss');
+  if ($('.nav-list').hasClass('selected')) {
+    $('.nav-list').removeClass('selected').addClass('dismiss');
   }
   event.preventDefault();
 });
@@ -78,9 +61,7 @@ $("#re-hide").click();
 
 
     // Hamburger to X toggle
-    $('#nav-toggle').on('click', function() {
-      this.slideToggle('300');
-    });
+    
   }); // end DOM ready
 })(jQuery); // end jQuery83"9?"
 

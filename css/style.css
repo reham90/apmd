@@ -556,15 +556,15 @@ padding-top: 15px;
 }
 .price{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .old{
   font-size: 15px;
   color: #737373;
   text-decoration:line-through;
- 
   direction: ltr;
+  margin-left: 5px;
 }
 .new{
   font-size: 15px;
@@ -927,7 +927,7 @@ footer{
   display: none;
 }
 .sel-block{
-  justify-content: space-between;
+  justify-content: center;
 }
 .img-block{
   width: 155px;
@@ -1046,7 +1046,7 @@ padding-bottom: 16px;
 }
 
 .old{
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 /*** menu style **/
