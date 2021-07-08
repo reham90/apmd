@@ -297,14 +297,15 @@ nav ul li a:visited:hover {
   .nav-mobile {
     display: block;
     position: absolute;
-    right: 315px;
+       left: 0;
+    top: 15px;
   }
 
   nav {
     z-index: 9;
     padding: 0 0 15px;
     position: fixed;
-    right: 0;
+   left:-250px;
     height: 100%;
     background: #262626;
   }
@@ -313,7 +314,7 @@ nav ul li a:visited:hover {
     width: 250px;
     position: fixed;
     top: 0px;
-    right: 0;
+    left: 0;
     background: #fff;
     height: 100vh;
     box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 10%);
@@ -330,7 +331,7 @@ nav ul li a:visited:hover {
 
 @keyframes slide-in {
   0% {
-    -webkit-transform: translateX(100%);
+    -webkit-transform: translateX(-100%);
   }
   100% {
     -webkit-transform: translateX(0%);
@@ -339,7 +340,7 @@ nav ul li a:visited:hover {
 
 @-webkit-keyframes slide-in {
   0% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(0%);
@@ -351,7 +352,7 @@ nav ul li a:visited:hover {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -360,12 +361,12 @@ nav ul li a:visited:hover {
     -webkit-transform: translateX(0%);
   }
   100% {
-    -webkit-transform: translateX(100%);
+    -webkit-transform: translateX(-100%);
   }
 }
   nav ul li {
     float: none;
-    text-align: right;
+    text-align: left;
   }
   nav ul li a {
     padding: 15px;
@@ -377,6 +378,7 @@ nav ul li a:visited:hover {
 
   .nav-dropdown {
     position: static;
+    padding: 0;
   }
 }
 @media screen and (min-width: 799px) {
@@ -393,7 +395,7 @@ nav ul li a:visited:hover {
 #nav-toggle i{
   cursor: pointer;
   font-size: 16px;
-    color: #b7b7b7;
+    color: #231F20;
   position: absolute;
   content: "";
 }
@@ -406,17 +408,17 @@ nav ul li a:visited:hover {
   left: -13px;
 }
 #re-hide{
-  display: none;
-  position: absolute;
-  left: 90px;
-  z-index: 999;
-  top:-13px;
+     position: absolute;
+    right: 0;
+    z-index: 999;
+    font-size: 16px;
+    top: -13px;
 }
 .nav-dropdown {
   position: absolute;
   display: none;
   z-index: 1;
-  background: #fff;
+  background: transparent;
   top: 45px;
   box-shadow: none;
 }
@@ -427,6 +429,15 @@ nav ul li a:visited:hover {
 }
 .flag{
   padding-right: 7px;
+}
+@media only screen and (max-width: 798px){
+nav ul li a {
+    padding: 0;
+    margin-bottom: 20px;
+    }
+nav ul{
+  padding: 30px;
+  }
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -910,7 +921,7 @@ footer{
 .logo{
       width: 120px;
       height: 90px;
-      margin-left: 30px;
+      margin-left: 39px;
 }
 .cart-bar{
   margin-right: 0;

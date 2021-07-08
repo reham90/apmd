@@ -22,7 +22,7 @@
 
 $("#re-show").toggle();
 
-$("#re-hide").toggle();
+$("#re-hide").css("display" ,"block");
 
 $("#cover").toggle();
 
@@ -35,9 +35,17 @@ $("#cover").toggle();
     });
 
   $('#re-show').click(function(event) {
-     $('nav ').css("right" , "0");
 
+ if (document.dir=="rtl") {
+
+     $('nav ').css("right" , "0");
+}
+else{
+    $('nav ').css("left" , "0");
+
+}
     $("body").css("overflow" , "hidden");
+
 
 $("#nav").toggle();
   
@@ -54,6 +62,10 @@ $('#re-hide').click(function(event) {
   }
   event.preventDefault();
  $("body").css("overflow" , "auto");
+
+ $("#cover").toggle();
+
+ $("#re-show").toggle();
 });
 
  $('#cover').on('click', function() {

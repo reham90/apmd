@@ -386,7 +386,7 @@ nav ul li a:visited:hover {
 #nav-toggle i{
   cursor: pointer;
   font-size: 16px;
-    color: #b7b7b7;
+    color: #231F20;
   position: absolute;
   content: "";
 }
@@ -402,6 +402,7 @@ nav ul li a:visited:hover {
   position: absolute;
   right: 196px;
   z-index: 999;
+  font-size: 16px;
   top: -13px;
 }
 .nav-dropdown {
