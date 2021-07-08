@@ -1062,17 +1062,15 @@ padding-bottom: 16px;
 }
 .copy p{
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .copy p:first-child{
-      padding-top: 15px;
+      padding-top: 0px;
 }
-.name{
-  /* margin-right: 20px; */
-}
-.old{
-  /* margin-right: 20px; */
-}
+.img-block span {
+    font-size: 10px;
+    width: 60px;
+    height: 20px;
 }
 
 
